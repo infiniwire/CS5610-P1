@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   color: #203027;
@@ -58,16 +64,175 @@ body {
 .page-content {
   max-width: 72rem;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.5rem 4rem;
 }
 
 .page-content h1 {
   color: #123b2a;
 }
 
+.hero {
+  padding: 2.5rem;
+  background: #eaf2ec;
+  border: 1px solid #d4e4d8;
+  border-radius: 1.25rem;
+}
+
+.hero-copy {
+  max-width: 42rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 1.1;
+}
+
+.hero-lead {
+  margin: 1.25rem 0 0;
+  color: #123b2a;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  font-weight: 600;
+}
+
+.hero-description {
+  max-width: 38rem;
+  margin: 1rem 0 0;
+  color: #415348;
+}
+
+.hero-actions {
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid #123b2a;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button-primary {
+  color: #ffffff;
+  background: #123b2a;
+}
+
+.button-primary:hover {
+  background: #20553d;
+}
+
+.button:focus-visible {
+  outline: 3px solid #8cb999;
+  outline-offset: 3px;
+}
+
+.content-section {
+  padding: 4rem 0;
+  border-bottom: 1px solid #d8e5db;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #123b2a;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(0, 1.5fr);
+  gap: 2rem;
+}
+
+.section-copy p {
+  max-width: 44rem;
+  margin: 0 0 1rem;
+}
+
+.section-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group h3 {
+  margin: 0.7rem 0 0.5rem;
+  color: #123b2a;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 2rem;
+  margin-top: 1.5rem;
+}
+
+.skill-group {
+  padding-top: 0.5rem;
+  border-top: 2px solid #9fbdab;
+}
+
+.education-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education-list li {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(0, 1fr);
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid #d8e5db;
+}
+
+.education-logo {
+  width: 3.25rem;
+  height: auto;
+}
+
+.education-details {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.education-details strong {
+  color: #123b2a;
+}
+
+.education-details span {
+  color: #526258;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .site-nav {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .page-content {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .content-section {
+    padding: 3rem 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }

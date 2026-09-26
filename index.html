@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sheng Qin" />
-    <meta name="description" content="Personal homepage of Sheng Qin." />
+    <meta
+      name="description"
+      content="Sheng Qin is a software developer working across web applications, automation, data, and mobile development."
+    />
     <title>Sheng Qin | Personal Homepage</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./js/main.js"></script>
@@ -23,9 +26,89 @@
     </header>
 
     <main class="page-content">
-      <section class="about-section" id="about" aria-labelledby="about-heading">
-        <h1 id="about-heading">About</h1>
-        <p>I enjoy building useful web experiences and software tools.</p>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Hello,</h1>
+          <p class="hero-lead">I build software that makes complex work easier.</p>
+          <p class="hero-description">
+            My work spans web applications, automation, enterprise integrations, and mobile
+            development. I focus on practical tools that help people work with reliable data.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="./projects.html">Explore my projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section about-section" id="about" aria-labelledby="about-heading">
+        <div class="section-heading">
+          <h2 id="about-heading">About</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            I am a Software Developer. My path there began with
+            a system administrator co-op, followed by application and software development roles.
+            That progression gave me a broad view of how software, data, and everyday workflows
+            fit together.
+          </p>
+          <p>
+            I enjoy working across teams, finding the cause of a problem, and making
+            the next version of a tool easier to use and maintain.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <h2 id="skills-heading">Tools I use</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Python, JavaScript, PHP, Dart, Java, C#, SQL</p>
+          </div>
+          <div class="skill-group">
+            <h3>Web and mobile</h3>
+            <p>REST APIs, Node.js, Vue.js, Flutter, Kotlin, Flask</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud and data</h3>
+            <p>Azure Functions, Databricks, Azure Blob Storage, MySQL, Pandas</p>
+          </div>
+          <div class="skill-group">
+            <h3>Development tools</h3>
+            <p>Git, GitHub Actions, Docker, Jupyter Notebook</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="education-heading">
+        <div class="section-heading">
+          <h2 id="education-heading">Education</h2>
+        </div>
+        <ul class="education-list">
+          <li>
+            <img class="education-logo" src="./assets/northeastern-logo.png" alt="" width="52" height="52" />
+            <div class="education-details">
+              <strong>M.S. in Computer Science</strong>
+              <span>Northeastern University · 2025–2027 (expected)</span>
+            </div>
+          </li>
+          <li>
+            <img class="education-logo" src="./assets/bcit-logo.svg" alt="" width="52" height="47" />
+            <div class="education-details">
+              <strong>B.Sc. in Applied Computer Science</strong>
+              <span>BCIT · With Distinction · 2023–2025</span>
+            </div>
+          </li>
+          <li>
+            <img class="education-logo" src="./assets/bcit-logo.svg" alt="" width="52" height="47" />
+            <div class="education-details">
+              <strong>Diploma in Computer Systems Technology</strong>
+              <span>BCIT · With Distinction · 2020–2022</span>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
   </body>
