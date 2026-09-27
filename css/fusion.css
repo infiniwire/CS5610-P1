@@ -1,0 +1,104 @@
+.chapters-page {
+  max-width: 64rem;
+}
+
+.chapters-intro {
+  margin-bottom: 2rem;
+}
+
+.chapters-intro h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.chapters-intro p {
+  margin: 0;
+  color: #415348;
+  font-size: 1.1rem;
+}
+
+.year-picker {
+  padding: 1.75rem;
+  background: #eaf2ec;
+  border: 1px solid #c9dece;
+}
+
+.year-picker h2 {
+  margin: 0 0 0.75rem;
+  color: #123b2a;
+  font-size: 1.3rem;
+}
+
+.year-picker label {
+  display: block;
+  color: #415348;
+}
+
+#selected-year {
+  display: block;
+  margin: 0.35rem 0 1rem;
+  color: #123b2a;
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  line-height: 1;
+}
+
+#year-slider {
+  display: block;
+  width: 100%;
+  accent-color: #0babad;
+  cursor: pointer;
+}
+
+#year-slider:focus-visible {
+  outline: 2px solid #0babad;
+  outline-offset: 5px;
+}
+
+.year-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  color: #526258;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.timeline-card {
+  min-height: 12rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #d8e5db;
+}
+
+.timeline-card h2 {
+  margin: 0 0 1rem;
+  color: #123b2a;
+  font-size: 1.35rem;
+}
+
+.timeline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-list li + li {
+  margin-top: 0.75rem;
+}
+
+.ai-note {
+  margin: 1.25rem 0 0;
+  color: #526258;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+}

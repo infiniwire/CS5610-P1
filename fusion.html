@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sheng Qin" />
-    <meta name="description" content="Fusion, an upcoming AI-created page for Sheng Qin's personal website." />
-    <title>Fusion | Sheng Qin</title>
+    <meta name="description" content="Explore Sheng Qin's education and projects year by year." />
+    <title>Chapters | Sheng Qin</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fusion.css" />
     <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/fusion.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -16,15 +18,44 @@
         <ul class="nav-list">
           <li><a class="nav-link" href="./index.html">Home</a></li>
           <li><a class="nav-link" href="./projects.html">Projects</a></li>
-          <li><a class="nav-link" href="./fusion.html" aria-current="page">Fusion</a></li>
-          <li><a class="nav-link" href="./index.html#about">About</a></li>
+          <li><a class="nav-link" href="./fusion.html" aria-current="page">Chapters</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="page-content">
-      <h1>Fusion</h1>
-      <p>AI-created content will be added here.</p>
+    <main class="page-content chapters-page">
+      <header class="chapters-intro">
+        <h1>Chapters</h1>
+        <p>Slide through the years to see what I was studying and building.</p>
+      </header>
+
+      <section class="year-picker" aria-labelledby="year-picker-heading">
+        <h2 id="year-picker-heading">Explore a year</h2>
+        <label for="year-slider">Year</label>
+        <output id="selected-year" for="year-slider" aria-live="polite">2023</output>
+        <input id="year-slider" type="range" min="2020" max="2026" step="1" value="2023" />
+        <div class="year-scale" aria-hidden="true">
+          <span>2020</span>
+          <span>2026</span>
+        </div>
+      </section>
+
+      <div class="timeline-grid">
+        <section class="timeline-card" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <ul id="education-at-year" class="timeline-list">
+            <li>B.Sc. in Applied Computer Science — BCIT</li>
+          </ul>
+        </section>
+        <section class="timeline-card" aria-labelledby="project-heading">
+          <h2 id="project-heading">Project milestone</h2>
+          <ul id="projects-at-year" class="timeline-list">
+            <li>Ballard Customer Portal</li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="ai-note">Projects appear in their selected year. Education periods may overlap. This interactive page was created with generative AI.</p>
     </main>
   </body>
 </html>
