@@ -1,7 +1,10 @@
 {
   "name": "cs5610-p1",
+  "version": "1.0.0",
+  "description": "Sheng Qin's personal homepage for CS5610 Web Development",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write index.html projects.html fusion.html css js eslint.config.js package.json README.md .github/workflows/publish-pages.yml",
