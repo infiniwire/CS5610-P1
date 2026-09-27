@@ -23,39 +23,87 @@
       </nav>
     </header>
 
-    <main class="page-content chapters-page">
-      <header class="chapters-intro">
-        <h1>Chapters</h1>
-        <p>Slide through the years to see what I was studying and building.</p>
+    <main class="page-content fusion-page">
+      <header class="fusion-intro">
+        <div>
+          <p class="fusion-eyebrow">An interactive portfolio / 2020–2026</p>
+          <h1>Chapters<span aria-hidden="true">.</span></h1>
+        </div>
+        <p>Seven years of learning and building. Move the ruler to see the education and project milestone behind each year.</p>
       </header>
 
-      <section class="year-picker" aria-labelledby="year-picker-heading">
-        <h2 id="year-picker-heading">Explore a year</h2>
-        <label for="year-slider">Year</label>
-        <output id="selected-year" for="year-slider" aria-live="polite">2023</output>
-        <input id="year-slider" type="range" min="2020" max="2026" step="1" value="2023" />
+      <section class="year-explorer" aria-labelledby="explorer-heading">
+        <h2 id="explorer-heading" class="visually-hidden">Explore the timeline by year</h2>
+        <label for="year-slider" class="visually-hidden">Select a year</label>
+        <p id="slider-instructions" class="slider-hint">Drag the ruler or use the arrow keys</p>
+        <div class="year-readout">
+          <output id="selected-year" for="year-slider" aria-live="polite">2023</output>
+          <span>year</span>
+        </div>
+        <div class="year-ruler">
+          <div class="ruler-track" aria-hidden="true">
+            <div id="year-ticks" class="year-ticks"></div>
+            <span id="year-marker" class="year-marker"></span>
+          </div>
+          <input id="year-slider" type="range" min="2020" max="2026" step="1" value="2023" aria-describedby="slider-instructions" />
+        </div>
         <div class="year-scale" aria-hidden="true">
           <span>2020</span>
+          <span>2022</span>
+          <span>2024</span>
           <span>2026</span>
         </div>
       </section>
 
-      <div class="timeline-grid">
-        <section class="timeline-card" aria-labelledby="education-heading">
-          <h2 id="education-heading">Education</h2>
-          <ul id="education-at-year" class="timeline-list">
-            <li>B.Sc. in Applied Computer Science — BCIT</li>
-          </ul>
-        </section>
-        <section class="timeline-card" aria-labelledby="project-heading">
-          <h2 id="project-heading">Project milestone</h2>
-          <ul id="projects-at-year" class="timeline-list">
-            <li>Ballard Customer Portal</li>
-          </ul>
-        </section>
-      </div>
+      <section class="year-story" aria-labelledby="story-heading">
+        <header class="story-header">
+          <p id="chapter-number" class="chapter-number">Chapter 04 / 07</p>
+          <h2 id="story-heading">Applied CS and customer portals</h2>
+          <span id="story-year" class="story-watermark" aria-hidden="true">2023</span>
+        </header>
 
-      <p class="ai-note">Projects appear in their selected year. Education periods may overlap. This interactive page was created with generative AI.</p>
+        <div id="story-content" class="story-content">
+          <section class="story-column" aria-labelledby="timeline-education-heading">
+            <div class="column-heading">
+              <span aria-hidden="true">01</span>
+              <div>
+                <p class="panel-label">The learning</p>
+                <h3 id="timeline-education-heading">Education</h3>
+              </div>
+            </div>
+            <ul id="education-at-year" class="timeline-list">
+              <li>
+                <strong>B.Sc. in Applied Computer Science</strong>
+                <span>BCIT · With Distinction</span>
+                <p class="entry-description">BCIT offers practical, career-focused education that combines technical skills with real-world experience.</p>
+              </li>
+            </ul>
+          </section>
+
+          <div class="story-connector" aria-hidden="true">
+            <span id="connector-crossbar"></span>
+          </div>
+
+          <section class="story-column" aria-labelledby="timeline-projects-heading">
+            <div class="column-heading">
+              <span aria-hidden="true">02</span>
+              <div>
+                <p class="panel-label">The building</p>
+                <h3 id="timeline-projects-heading">Project milestone</h3>
+              </div>
+            </div>
+            <ul id="projects-at-year" class="timeline-list">
+              <li>
+                <strong>Ballard Customer Portal</strong>
+                <span>Customer portal · PHP, JavaScript, CSS, SQL, MVC</span>
+                <p class="entry-description">A customer-facing portal that integrates third-party services and automates post-sales workflows for Ballard's global customers.</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <p class="timeline-note">Projects appear in their selected year. Education periods may overlap. This interactive page was created with generative AI.</p>
     </main>
   </body>
 </html>
