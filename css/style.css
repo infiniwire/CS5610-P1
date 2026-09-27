@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,7 @@ body {
   margin: 0;
   color: #203027;
   background: #f5f9f5;
-  font-family: system-ui, sans-serif;
+  font-family: "Ubuntu", system-ui, sans-serif;
   line-height: 1.5;
 }
 
@@ -75,7 +77,6 @@ body {
   padding: 2.5rem;
   background: #eaf2ec;
   border: 1px solid #d4e4d8;
-  border-radius: 1.25rem;
 }
 
 .hero-copy {
@@ -115,7 +116,6 @@ body {
   min-height: 2.75rem;
   padding: 0.6rem 1.1rem;
   border: 1px solid #123b2a;
-  border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -196,7 +196,6 @@ body {
   color: #123b2a;
   background: #e5f0e8;
   border: 1px solid #c9dece;
-  border-radius: 999px;
   font-size: 0.9rem;
   white-space: nowrap;
 }
@@ -243,8 +242,79 @@ body {
   font-size: 0.9rem;
 }
 
+.projects-intro {
+  max-width: 46rem;
+  margin-bottom: 2.5rem;
+}
+
+.projects-intro h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.projects-intro p {
+  margin: 0;
+  color: #495b50;
+  font-size: 1.1rem;
+}
+
+.project-link:focus-visible {
+  outline: 3px solid #8cb999;
+  outline-offset: 3px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background: #ffffff;
+  border: 1px solid #d8e5db;
+}
+
+.project-card p {
+  margin: 0;
+}
+
+.project-card h3 {
+  margin: 0 0 0.85rem;
+  color: #123b2a;
+  font-size: 1.45rem;
+  line-height: 1.25;
+}
+
+.project-summary {
+  color: #415348;
+}
+
+.project-card .project-contribution {
+  margin-top: 1rem;
+}
+
+.project-tech {
+  margin: 1.25rem 0 0;
+}
+
+.project-link {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  align-self: flex-start;
+  color: #145537;
+  font-weight: 700;
+  text-underline-offset: 0.2rem;
+}
+
 @media (max-width: 800px) {
   .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -269,5 +339,9 @@ body {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.4rem;
   }
 }

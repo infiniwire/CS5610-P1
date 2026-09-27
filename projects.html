@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sheng Qin" />
-    <meta name="description" content="Projects by Sheng Qin." />
+    <meta
+      name="description"
+      content="Selected web, mobile, and desktop software projects by Sheng Qin."
+    />
     <title>Projects | Sheng Qin</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script type="module" src="./js/main.js"></script>
@@ -22,9 +25,117 @@
       </nav>
     </header>
 
-    <main class="page-content">
-      <h1>Projects</h1>
-      <p>Project details will be added here.</p>
+    <main class="page-content projects-page">
+      <header class="projects-intro">
+        <h1>Projects</h1>
+        <p>
+          A few things I have built or helped build, from an enterprise customer portal to mobile
+          and desktop applications.
+        </p>
+      </header>
+
+      <section aria-label="Selected projects">
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Java Calculator</h3>
+            <p class="project-summary">
+              An early Java desktop project with scientific calculations and a history view.
+            </p>
+            <p class="project-contribution">
+              <strong>My work:</strong> Explored the JavaFX interface and how to organize and
+              revisit previous calculations.
+            </p>
+            <ul class="tool-list project-tech" aria-label="Technologies">
+              <li><img src="./assets/icons/java.svg" alt="" width="22" height="22" />Java</li>
+              <li><img src="./assets/icons/javafx.svg" alt="" width="22" height="22" />JavaFX</li>
+            </ul>
+            <a class="project-link" href="https://github.com/infiniwire/JAVA_Calculator" target="_blank" rel="noopener noreferrer">
+              View source code
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>Order Entry and Sales Prediction</h3>
+            <p class="project-summary">
+              Purchase orders arrive as PDFs and scans in many layouts. This project explored OCR
+              and an LLM to turn those documents into structured order data, then use the stored
+              records for sales analysis.
+            </p>
+            <p class="project-contribution">
+              <strong>My work:</strong> Designed the upload and review workflow and tested the
+              extraction process across the Vue frontend and Flask backend.
+            </p>
+            <ul class="tool-list project-tech" aria-label="Technologies">
+              <li><img src="./assets/icons/vuejs.svg" alt="" width="22" height="22" />Vue</li>
+              <li><img src="./assets/icons/python.svg" alt="" width="22" height="22" />Python</li>
+              <li><img src="./assets/icons/flask.svg" alt="" width="22" height="22" />Flask</li>
+              <li><img src="./assets/icons/ocr.svg" alt="" width="22" height="22" />OCR</li>
+              <li><img src="./assets/icons/mysql.svg" alt="" width="22" height="22" />MySQL</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <h3>LENZ Photo Gallery</h3>
+            <p class="project-summary">
+              A team-built Flutter application for browsing and managing photo albums and images.
+            </p>
+            <p class="project-contribution">
+              <strong>My work:</strong> Contributed search and home screens, album interactions,
+              and Flutter UI tests alongside the team.
+            </p>
+            <ul class="tool-list project-tech" aria-label="Technologies">
+              <li><img src="./assets/icons/flutter.svg" alt="" width="22" height="22" />Flutter</li>
+              <li><img src="./assets/icons/dart.svg" alt="" width="22" height="22" />Dart</li>
+            </ul>
+            <a class="project-link" href="https://github.com/bradmasy/LENZ-ANDROID" target="_blank" rel="noopener noreferrer">
+              View team repository
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>CST Calendar App</h3>
+            <p class="project-summary">
+              A team-built calendar that helps BCIT students track courses, assignments, and
+              deadlines in one place.
+            </p>
+            <p class="project-contribution">
+              <strong>My work:</strong> Built the calendar and home pages and connected task
+              actions to Firebase data.
+            </p>
+            <ul class="tool-list project-tech" aria-label="Technologies">
+              <li><img src="./assets/icons/html5.svg" alt="" width="22" height="22" />HTML</li>
+              <li><img src="./assets/icons/css3.svg" alt="" width="22" height="22" />CSS</li>
+              <li><img src="./assets/icons/javascript.svg" alt="" width="22" height="22" />JavaScript</li>
+              <li><img src="./assets/icons/firebase.svg" alt="" width="22" height="22" />Firebase</li>
+            </ul>
+            <a class="project-link" href="https://github.com/infiniwire/CSTCalendarApp" target="_blank" rel="noopener noreferrer">
+              View project fork
+            </a>
+          </div>
+
+          <div class="project-card">
+            <h3>Ballard Customer Portal</h3>
+            <p class="project-summary">
+              A customer-facing portal that integrates third-party services and automates
+              post-sales workflows for Ballard's global customers.
+            </p>
+            <p class="project-contribution">
+              <strong>My work:</strong> Led development and ongoing improvements, including
+              MVC-based features, service integrations, and interface updates.
+            </p>
+            <ul class="tool-list project-tech" aria-label="Technologies">
+              <li><img src="./assets/icons/php.svg" alt="" width="22" height="22" />PHP</li>
+              <li><img src="./assets/icons/javascript.svg" alt="" width="22" height="22" />JavaScript</li>
+              <li><img src="./assets/icons/css3.svg" alt="" width="22" height="22" />CSS</li>
+              <li><img src="./assets/icons/sql.svg" alt="" width="22" height="22" />SQL</li>
+              <li><img src="./assets/icons/mvc.svg" alt="" width="22" height="22" />MVC</li>
+            </ul>
+            <a class="project-link" href="https://ballard.custhelp.com/" target="_blank" rel="noopener noreferrer">
+              Visit customer portal
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
