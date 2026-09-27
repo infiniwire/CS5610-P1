@@ -1,0 +1,16 @@
+{
+  "name": "cs5610-p1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write index.html projects.html fusion.html css js eslint.config.js package.json .github/workflows/publish-pages.yml",
+    "format:check": "prettier --check index.html projects.html fusion.html css js eslint.config.js package.json .github/workflows/publish-pages.yml"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.11.0",
+    "globals": "17.12.0",
+    "prettier": "3.9.9"
+  }
+}

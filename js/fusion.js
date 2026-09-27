@@ -16,7 +16,8 @@ const ticksPerYear = 8;
 
 for (let tick = 0; tick <= (lastYear - firstYear) * ticksPerYear; tick += 1) {
   const mark = document.createElement("span");
-  mark.className = tick % ticksPerYear === 0 ? "year-tick major-tick" : "year-tick";
+  mark.className =
+    tick % ticksPerYear === 0 ? "year-tick major-tick" : "year-tick";
   yearTicks.append(mark);
 }
 
@@ -28,21 +29,24 @@ const educationPeriods = [
     end: 2022,
     title: "Diploma in Computer Systems Technology",
     detail: "BCIT · With Distinction",
-    description: "BCIT offers practical, career-focused education that combines technical skills with real-world experience.",
+    description:
+      "BCIT offers practical, career-focused education that combines technical skills with real-world experience.",
   },
   {
     start: 2023,
     end: 2025,
     title: "B.Sc. in Applied Computer Science",
     detail: "BCIT · With Distinction",
-    description: "BCIT offers practical, career-focused education that combines technical skills with real-world experience.",
+    description:
+      "BCIT offers practical, career-focused education that combines technical skills with real-world experience.",
   },
   {
     start: 2025,
     end: 2027,
     title: "M.S. in Computer Science",
     detail: "Northeastern University · Expected 2027",
-    description: "Northeastern is a global research university known for experiential learning, research, and partnerships.",
+    description:
+      "Northeastern is a global research university known for experiential learning, research, and partnerships.",
   },
 ];
 
@@ -51,31 +55,36 @@ const projectsByYear = [
     year: 2020,
     title: "CST Calendar App",
     detail: "Student planning calendar · HTML, CSS, JavaScript, Firebase",
-    description: "A team-built calendar that helps BCIT students track courses, assignments, and deadlines in one place.",
+    description:
+      "A team-built calendar that helps BCIT students track courses, assignments, and deadlines in one place.",
   },
   {
     year: 2021,
     title: "Java Calculator",
     detail: "Scientific calculator · Java, JavaFX",
-    description: "A Java desktop calculator with scientific calculations and a history view.",
+    description:
+      "A Java desktop calculator with scientific calculations and a history view.",
   },
   {
     year: 2023,
     title: "Ballard Customer Portal",
     detail: "Customer portal · PHP, JavaScript, CSS, SQL, MVC",
-    description: "A customer-facing portal that integrates third-party services and automates post-sales workflows for Ballard's global customers.",
+    description:
+      "A customer-facing portal that integrates third-party services and automates post-sales workflows for Ballard's global customers.",
   },
   {
     year: 2024,
     title: "LENZ Photo Gallery",
     detail: "Team photo gallery · Flutter, Dart",
-    description: "A team-built Flutter application for browsing and managing photo albums and images.",
+    description:
+      "A team-built Flutter application for browsing and managing photo albums and images.",
   },
   {
     year: 2025,
     title: "Order Entry and Sales Prediction",
     detail: "Bachelor's capstone · Vue, Python, Flask, OCR",
-    description: "A bachelor's capstone exploring OCR and an LLM to turn purchase-order PDFs and scans into structured data for sales analysis.",
+    description:
+      "A bachelor's capstone exploring OCR and an LLM to turn purchase-order PDFs and scans into structured data for sales analysis.",
   },
 ];
 
@@ -138,14 +147,21 @@ function showYear(animate = false) {
   chapterNumber.textContent = `Chapter ${chapter} / ${totalChapters}`;
   storyHeading.textContent = yearHeadlines[year];
   storyYear.textContent = String(year);
-  showEntries(educationList, activeEducation, "No education entry for this year.");
+  showEntries(
+    educationList,
+    activeEducation,
+    "No education entry for this year.",
+  );
   showEntries(
     projectList,
     activeProjects,
     "No featured project marks this year. Move the ruler to another milestone.",
   );
 
-  if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (
+    animate &&
+    !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  ) {
     const revealedElements = [
       selectedYear,
       storyHeading,

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Sheng Qin" />
-    <meta name="description" content="Explore Sheng Qin's education and projects year by year." />
+    <meta
+      name="description"
+      content="Explore Sheng Qin's education and projects year by year."
+    />
     <title>Chapters | Sheng Qin</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/fusion.css" />
@@ -18,7 +21,11 @@
         <ul class="nav-list">
           <li><a class="nav-link" href="./index.html">Home</a></li>
           <li><a class="nav-link" href="./projects.html">Projects</a></li>
-          <li><a class="nav-link" href="./fusion.html" aria-current="page">Chapters</a></li>
+          <li>
+            <a class="nav-link" href="./fusion.html" aria-current="page"
+              >Chapters</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -29,15 +36,24 @@
           <p class="fusion-eyebrow">An interactive portfolio / 2020–2026</p>
           <h1>Chapters<span aria-hidden="true">.</span></h1>
         </div>
-        <p>Seven years of learning and building. Move the ruler to see the education and project milestone behind each year.</p>
+        <p>
+          Seven years of learning and building. Move the ruler to see the
+          education and project milestone behind each year.
+        </p>
       </header>
 
       <section class="year-explorer" aria-labelledby="explorer-heading">
-        <h2 id="explorer-heading" class="visually-hidden">Explore the timeline by year</h2>
+        <h2 id="explorer-heading" class="visually-hidden">
+          Explore the timeline by year
+        </h2>
         <label for="year-slider" class="visually-hidden">Select a year</label>
-        <p id="slider-instructions" class="slider-hint">Drag the ruler or use the arrow keys</p>
+        <p id="slider-instructions" class="slider-hint">
+          Drag the ruler or use the arrow keys
+        </p>
         <div class="year-readout">
-          <output id="selected-year" for="year-slider" aria-live="polite">2023</output>
+          <output id="selected-year" for="year-slider" aria-live="polite"
+            >2023</output
+          >
           <span>year</span>
         </div>
         <div class="year-ruler">
@@ -45,7 +61,15 @@
             <div id="year-ticks" class="year-ticks"></div>
             <span id="year-marker" class="year-marker"></span>
           </div>
-          <input id="year-slider" type="range" min="2020" max="2026" step="1" value="2023" aria-describedby="slider-instructions" />
+          <input
+            id="year-slider"
+            type="range"
+            min="2020"
+            max="2026"
+            step="1"
+            value="2023"
+            aria-describedby="slider-instructions"
+          />
         </div>
         <div class="year-scale" aria-hidden="true">
           <span>2020</span>
@@ -59,11 +83,16 @@
         <header class="story-header">
           <p id="chapter-number" class="chapter-number">Chapter 04 / 07</p>
           <h2 id="story-heading">Applied CS and customer portals</h2>
-          <span id="story-year" class="story-watermark" aria-hidden="true">2023</span>
+          <span id="story-year" class="story-watermark" aria-hidden="true"
+            >2023</span
+          >
         </header>
 
         <div id="story-content" class="story-content">
-          <section class="story-column" aria-labelledby="timeline-education-heading">
+          <section
+            class="story-column"
+            aria-labelledby="timeline-education-heading"
+          >
             <div class="column-heading">
               <span aria-hidden="true">01</span>
               <div>
@@ -75,7 +104,10 @@
               <li>
                 <strong>B.Sc. in Applied Computer Science</strong>
                 <span>BCIT · With Distinction</span>
-                <p class="entry-description">BCIT offers practical, career-focused education that combines technical skills with real-world experience.</p>
+                <p class="entry-description">
+                  BCIT offers practical, career-focused education that combines
+                  technical skills with real-world experience.
+                </p>
               </li>
             </ul>
           </section>
@@ -84,7 +116,10 @@
             <span id="connector-crossbar"></span>
           </div>
 
-          <section class="story-column" aria-labelledby="timeline-projects-heading">
+          <section
+            class="story-column"
+            aria-labelledby="timeline-projects-heading"
+          >
             <div class="column-heading">
               <span aria-hidden="true">02</span>
               <div>
@@ -96,14 +131,21 @@
               <li>
                 <strong>Ballard Customer Portal</strong>
                 <span>Customer portal · PHP, JavaScript, CSS, SQL, MVC</span>
-                <p class="entry-description">A customer-facing portal that integrates third-party services and automates post-sales workflows for Ballard's global customers.</p>
+                <p class="entry-description">
+                  A customer-facing portal that integrates third-party services
+                  and automates post-sales workflows for Ballard's global
+                  customers.
+                </p>
               </li>
             </ul>
           </section>
         </div>
       </section>
 
-      <p class="timeline-note">Projects appear in their selected year. Education periods may overlap. This interactive page was created with generative AI.</p>
+      <p class="timeline-note">
+        Projects appear in their selected year. Education periods may overlap.
+        This interactive page was created with generative AI.
+      </p>
     </main>
   </body>
 </html>

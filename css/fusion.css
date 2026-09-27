@@ -127,7 +127,9 @@
   width: 1px;
   height: 1.4rem;
   background: #d9dcda;
-  transition: height 0.18s ease, background-color 0.18s ease;
+  transition:
+    height 0.18s ease,
+    background-color 0.18s ease;
 }
 
 .year-tick.major-tick {
@@ -189,7 +191,9 @@
   border: 2px solid #cbd2e2;
   border-radius: 50%;
   box-shadow: 0 1px 3px #0000001a;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 #year-slider::-moz-range-thumb {
@@ -199,7 +203,9 @@
   border: 2px solid #cbd2e2;
   border-radius: 50%;
   box-shadow: 0 1px 3px #0000001a;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 #year-slider:hover::-webkit-slider-thumb,
@@ -227,10 +233,18 @@
   transform: translateX(-50%);
 }
 
-.year-scale span:nth-child(1) { left: 0; }
-.year-scale span:nth-child(2) { left: 33.333%; }
-.year-scale span:nth-child(3) { left: 66.667%; }
-.year-scale span:nth-child(4) { left: 100%; }
+.year-scale span:nth-child(1) {
+  left: 0;
+}
+.year-scale span:nth-child(2) {
+  left: 33.333%;
+}
+.year-scale span:nth-child(3) {
+  left: 66.667%;
+}
+.year-scale span:nth-child(4) {
+  left: 100%;
+}
 
 .year-story {
   margin-top: 2.25rem;
@@ -349,18 +363,35 @@
 }
 
 @keyframes chapter-light {
-  from { transform: translateX(0) skewX(-25deg); }
-  to { transform: translateX(330%) skewX(-25deg); }
+  from {
+    transform: translateX(0) skewX(-25deg);
+  }
+  to {
+    transform: translateX(330%) skewX(-25deg);
+  }
 }
 
 @keyframes watermark-breathe {
-  from { opacity: 0.07; transform: translateY(0); }
-  to { opacity: 0.13; transform: translateY(-10px); }
+  from {
+    opacity: 0.07;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.13;
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes connector-pulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); box-shadow: 0 0 0 0 #0babad33; }
-  50% { transform: translate(-50%, -50%) scale(1.4); box-shadow: 0 0 0 6px #0babad11; }
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 #0babad33;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.4);
+    box-shadow: 0 0 0 6px #0babad11;
+  }
 }
 
 .column-heading {
