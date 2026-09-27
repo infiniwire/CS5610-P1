@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "lint": "eslint .",
-    "format": "prettier --write index.html projects.html fusion.html css js eslint.config.js package.json .github/workflows/publish-pages.yml",
-    "format:check": "prettier --check index.html projects.html fusion.html css js eslint.config.js package.json .github/workflows/publish-pages.yml"
+    "format": "prettier --write index.html projects.html fusion.html css js eslint.config.js package.json README.md .github/workflows/publish-pages.yml",
+    "format:check": "prettier --check index.html projects.html fusion.html css js eslint.config.js package.json README.md .github/workflows/publish-pages.yml"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
