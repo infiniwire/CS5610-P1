@@ -3,7 +3,7 @@
 A static portfolio for CS5610 Web Development. It introduces my background, explains selected software projects, and connects education with project milestones through an interactive timeline.
 
 - **Author:** [Sheng Qin](https://github.com/infiniwire)
-- **Course:** [CS5610 Web Development](https://northeastern.instructure.com/courses/261032)
+- **Course:** [CS5610 Web Development](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 - **Live site:** [infiniwire.github.io/CS5610-P1](https://infiniwire.github.io/CS5610-P1/)
 
 ## Project objective
