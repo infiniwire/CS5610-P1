@@ -10,6 +10,9 @@ A static portfolio for CS5610 Web Development. It introduces my background, expl
 
 The site helps visitors understand the kinds of software I build and what I contributed to each project. It is a front-end-only site made with HTML5, CSS3, and ES6 modules. It uses no back-end service, component library, or jQuery.
 
+<!--Design Doc missing-->
+
+
 ## Pages
 
 | Page                      | Purpose                                                                                                                                          |
